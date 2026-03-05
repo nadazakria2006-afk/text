@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="pb-3 test-muted">Bootstrap</h1>
+        <hr>
+
+        <div class="from-project text-center my-5 py-4">
+            <h2>Bookmark your favorite sittes</h2>
+            <div class="form-grop mx-5">
+                <label class="text-center font-weight-blod">Site Name</label>
+                <input id="name" type="text" class="form-control" placeholder="Bookmark Name">
+            </div>
+            <div class="form-grop mx-5">
+                <label class="text-center font-weight-blod"> Site URL</label>
+                <input id="url" type="text" class="form-control" placeholder="website URL">
+            </div>
+            <button id="addBtn" disabled class="btn btn-primary">submit</button>
+
+        </div>
+        <input  onkeyup="search(this.value)" class="my-3 form-control" placeholder="search by Bookmark name">
+
+        <div class="output">
+            <table class="table">
+                <thead>
+                </thead>
+                <tbody id="tableBody">
+
+                </tbody>
+
+            </table>
+        </div>
+        <hr>
+        <footer>
+            <h6 class="test-muted">2019 Bookmark Inc.</h6>
+        </footer>
+
+    </div>
+    
+
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/jquery-3.5.1.slim.min.js"></script>
+</body>
+</html>
